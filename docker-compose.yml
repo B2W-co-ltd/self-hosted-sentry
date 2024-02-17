@@ -404,7 +404,8 @@ services:
   nginx:
     <<: *restart_policy
     ports:
-      - "$SENTRY_BIND:443/tcp"
+      - "80:80/tcp"
+      - "443:443/tcp"
     image: "nginx:1.25.4-alpine"
     volumes:
       - type: bind
