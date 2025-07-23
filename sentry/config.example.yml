@@ -8,12 +8,12 @@
 ###############
 
 # mail.backend: 'smtp'  # Use dummy if you want to disable email entirely
-mail.host: 'smtp'
-# mail.port: 25
-# mail.username: ''
-# mail.password: ''
-# mail.use-tls: false
-# mail.use-ssl: false
+mail.host: 'smtp.zoho.com'
+mail.port: 587
+mail.username: 'system@temp.in.th'
+mail.password: 'PHvumYYFjCqA'
+mail.use-tls: true
+mail.use-ssl: false
 
 # NOTE: The following 2 configs (mail.from and mail.list-namespace) are set
 #       through SENTRY_MAIL_HOST in sentry.conf.py so remove those first if

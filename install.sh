@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -eE
+source .env
 
 # Pre-pre-flight? 🤷
 if [[ -n "$MSYSTEM" ]]; then
