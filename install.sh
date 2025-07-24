@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source .env
 set -eEuo pipefail
 test "${DEBUG:-}" && set -x
 

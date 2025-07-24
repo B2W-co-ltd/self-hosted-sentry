@@ -57,7 +57,7 @@ x-sentry-defaults: &sentry_defaults
     # on the host system (or in the .env file)
     COMPOSE_PROFILES:
     SENTRY_EVENT_RETENTION_DAYS:
-    SENTRY_MAIL_HOST:
+    SENTRY_MAIL_HOST: "smtp.zoho.com"
     SENTRY_MAX_EXTERNAL_SOURCEMAP_SIZE:
   volumes:
     - "sentry-data:/data"
@@ -451,7 +451,8 @@ services:
   nginx:
     <<: *restart_policy
     ports:
-      - "$SENTRY_BIND:80/tcp"
+      - "80:80/tcp"
+      - "443:443/tcp"
     image: "nginx:1.25.4-alpine"
     volumes:
       - type: bind
